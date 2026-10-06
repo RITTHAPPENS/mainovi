@@ -193,8 +193,7 @@ p { margin: 0; text-wrap: pretty; }
   display: inline-flex; align-items: center; gap: 14px;
   text-decoration: none; flex: none;
 }
-.brand-mark { height: 40px; width: auto; }
-.brand-word { height: 22px; width: auto; }
+.brand-logo { height: 44px; width: auto; }
 
 .nav { margin-left: auto; display: flex; align-items: center; gap: 36px; }
 .nav-list { display: flex; gap: 32px; list-style: none; margin: 0; padding: 0; }
@@ -564,8 +563,7 @@ p { margin: 0; text-wrap: pretty; }
   .nav-list a { display: block; padding: 14px 0; font-size: 1.125rem; border-bottom: 1px solid var(--line); }
   .nav-list a::after { display: none; }
   .header-cta { width: 100%; min-height: 50px; }
-  .brand-mark { height: 36px; }
-  .brand-word { height: 18px; }
+  .brand-logo { height: 38px; }
 
   .hero { align-items: flex-end; }
   .hero-inner { padding-inline: 0; padding-bottom: 0; }
