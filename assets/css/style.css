@@ -378,9 +378,9 @@ p { margin: 0; text-wrap: pretty; }
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
   gap: clamp(40px, 6vw, 104px);
-  align-items: center;
+  align-items: start;
 }
-.export-media { position: relative; }
+.export-media { position: sticky; top: calc(var(--header-h) + 32px); }
 .export-media img { width: 100%; aspect-ratio: 16 / 11; object-fit: cover; }
 .export-text { display: grid; gap: 24px; }
 .export-text h2 { color: var(--granite-ink); }
@@ -393,10 +393,40 @@ p { margin: 0; text-wrap: pretty; }
 }
 .facts svg { width: 24px; height: 24px; color: var(--granite); margin-top: 1px; }
 .facts b { display: block; font-weight: 600; color: var(--ink); }
-.facts .todo {
-  display: inline-block; margin-top: 2px;
-  font-size: 0.8125rem; color: var(--granite);
-  background: var(--teal-soft); padding: 1px 8px; border-radius: 4px;
+
+
+.process-title {
+  font-family: var(--font-body); font-size: 0.9375rem; font-weight: 600; letter-spacing: 0.01em;
+  color: var(--ink); margin-top: 8px;
+}
+.process {
+  list-style: none; margin: -8px 0 0; padding: 0;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;
+  counter-reset: step;
+}
+.process li {
+  counter-increment: step;
+  display: grid; gap: 6px; align-content: start;
+  padding-top: 14px; border-top: 2px solid var(--granite);
+  font-size: 0.875rem; line-height: 1.55; color: var(--ink-soft);
+}
+.process li b {
+  font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; line-height: 1.2; color: var(--granite-ink);
+}
+.process li b::before {
+  content: counter(step) "  ";
+  font-family: var(--font-body); font-size: 0.8125rem; font-weight: 600; color: var(--granite);
+  white-space: pre;
+}
+.b2b-note {
+  display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 12px; align-items: start;
+  padding: 14px 16px; background: var(--porcelain); border: 1px solid var(--line); border-radius: 6px;
+  font-size: 0.9375rem; font-weight: 600; color: var(--granite-ink);
+}
+.b2b-note svg { width: 22px; height: 22px; color: var(--granite); }
+.contact-lines .opt { font-weight: 400; color: var(--ink-soft); }
+@media (max-width: 600px) {
+  .process { grid-template-columns: minmax(0, 1fr); gap: 16px; }
 }
 
 /* Anfrage */
@@ -580,6 +610,7 @@ p { margin: 0; text-wrap: pretty; }
   .export-grid,
   .inquiry-grid { grid-template-columns: minmax(0, 1fr); }
   .inquiry-intro { position: static; }
+  .export-media { position: static; }
   }
 
 .range-thumb { display: none; margin: -8px 0 28px 72px; aspect-ratio: 16 / 10; overflow: hidden; background: var(--porcelain-shade); }
