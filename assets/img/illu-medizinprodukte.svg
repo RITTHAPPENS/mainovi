@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t">
+  <title id="t">Illustration: Verbandrolle, Pflaster und Kompresse</title>
+  <defs>
+    <pattern id="gauze" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 0H14M0 0V14" stroke="#A8BFBD" stroke-width="1" opacity=".55"/>
+    </pattern>
+  </defs>
+
+  <!-- Grund -->
+  <rect width="800" height="600" fill="#ECEBE3"/>
+  <circle cx="410" cy="300" r="232" fill="#D3DFDD" opacity=".55"/>
+  <circle cx="410" cy="300" r="258" fill="none" stroke="#A8BFBD" stroke-width="2"/>
+
+  <g fill="none" stroke="#405C58" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Abgerollter Verband -->
+    <path d="M465 330 C500 370 520 420 590 440 L582 470 C510 450 480 410 455 380 Z" fill="#FBFAF6"/>
+    <path d="M465 330 C500 370 520 420 590 440 L582 470 C510 450 480 410 455 380 Z" fill="url(#gauze)" stroke="none"/>
+    <path d="M460 355 C505 395 525 435 586 455" stroke-width="1.5" stroke-dasharray="2 7" opacity=".7"/>
+
+    <!-- Verbandrolle: Körper -->
+    <path d="M262 236 H418 A60 82 0 0 1 418 400 H262" fill="#FBFAF6"/>
+    <path d="M262 236 H418 A60 82 0 0 1 418 400 H262" fill="url(#gauze)" stroke="none"/>
+    <!-- Verbandrolle: Stirnseite -->
+    <ellipse cx="262" cy="318" rx="60" ry="82" fill="#FFFFFF"/>
+    <ellipse cx="262" cy="318" rx="45" ry="62" stroke-width="1.5" opacity=".7"/>
+    <ellipse cx="262" cy="318" rx="30" ry="42" stroke-width="1.5" opacity=".7"/>
+    <ellipse cx="262" cy="318" rx="15" ry="21" fill="#ECEBE3"/>
+
+    <!-- Pflaster -->
+    <g transform="rotate(-16 590 214)">
+      <rect x="490" y="184" width="200" height="62" rx="31" fill="#F6F5EF"/>
+      <rect x="560" y="194" width="60" height="42" rx="7" fill="#D3DFDD"/>
+      <g fill="#405C58" stroke="none" opacity=".55">
+        <circle cx="514" cy="205" r="2.4"/><circle cx="530" cy="205" r="2.4"/><circle cx="546" cy="205" r="2.4"/>
+        <circle cx="514" cy="225" r="2.4"/><circle cx="530" cy="225" r="2.4"/><circle cx="546" cy="225" r="2.4"/>
+        <circle cx="634" cy="205" r="2.4"/><circle cx="650" cy="205" r="2.4"/><circle cx="666" cy="205" r="2.4"/>
+        <circle cx="634" cy="225" r="2.4"/><circle cx="650" cy="225" r="2.4"/><circle cx="666" cy="225" r="2.4"/>
+      </g>
+    </g>
+
+    <!-- Kompresse -->
+    <g transform="rotate(7 612 368)">
+      <rect x="548" y="304" width="128" height="128" rx="6" fill="#FFFFFF"/>
+      <rect x="548" y="304" width="128" height="128" rx="6" fill="url(#gauze)" stroke="none"/>
+      <rect x="562" y="318" width="100" height="100" rx="3" stroke-width="1.5" stroke-dasharray="5 6"/>
+      <path d="M548 368 H676" stroke-width="1.5" opacity=".6"/>
+    </g>
+
+    <!-- Kreuz-Plakette -->
+    <circle cx="192" cy="168" r="38" fill="#F6F5EF"/>
+    <path d="M185 147 H199 V161 H213 V175 H199 V189 H185 V175 H171 V161 H185 Z" stroke-width="2.5"/>
+  </g>
+</svg>
