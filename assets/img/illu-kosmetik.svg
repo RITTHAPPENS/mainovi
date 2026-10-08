@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t">
+  <title id="t">Illustration: Cremetiegel, Tube und Pipettenflasche</title>
+  <rect width="800" height="600" fill="#ECEBE3"/>
+  <circle cx="410" cy="300" r="232" fill="#D3DFDD" opacity=".55"/>
+  <circle cx="410" cy="300" r="258" fill="none" stroke="#A8BFBD" stroke-width="2"/>
+  <g fill="none" stroke="#405C58" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Tube -->
+    <g transform="translate(16 -46) rotate(-18 380 290)">
+      <rect x="252" y="270" width="40" height="40" rx="6" fill="#D3DFDD"/>
+      <rect x="290" y="252" width="182" height="76" rx="12" fill="#FFFFFF"/>
+      <rect x="470" y="256" width="24" height="68" rx="3" fill="#F6F5EF"/>
+      <path d="M478 262 V318 M486 262 V318" stroke-width="1.5" opacity=".7"/>
+      <rect x="330" y="270" width="96" height="40" rx="4" stroke-width="1.5" opacity=".7"/>
+      <path d="M346 290 H410" stroke-width="1.5" opacity=".7"/>
+    </g>
+    <!-- Pipettenflasche -->
+    <rect x="552" y="194" width="32" height="70" rx="16" fill="#FBFAF6"/>
+    <rect x="546" y="260" width="44" height="32" rx="4" fill="#D3DFDD"/>
+    <rect x="522" y="290" width="92" height="152" rx="18" fill="#F6F5EF"/>
+    <path d="M522 352 H614" stroke-width="1.5" opacity=".6"/>
+    <rect x="542" y="368" width="52" height="46" rx="4" stroke-width="1.5" opacity=".7"/>
+    <!-- Tiegel -->
+    <rect x="226" y="384" width="160" height="82" rx="16" fill="#FBFAF6"/>
+    <rect x="218" y="354" width="176" height="36" rx="10" fill="#D3DFDD"/>
+    <path d="M240 372 H372" stroke-width="1.5" opacity=".6"/>
+    <rect x="270" y="410" width="72" height="34" rx="4" stroke-width="1.5" opacity=".7"/>
+    <circle cx="192" cy="168" r="38" fill="#F6F5EF"/>
+    <path d="M192 146 C202 160 210 170 210 180 A18 18 0 0 1 174 180 C174 170 182 160 192 146 Z" stroke-width="2.5"/>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t">
+  <title id="t">Illustration: Karton, Vorratsglas, Süßwarenbeutel und Bonbon</title>
+  <rect width="800" height="600" fill="#ECEBE3"/>
+  <circle cx="410" cy="300" r="232" fill="#D3DFDD" opacity=".55"/>
+  <circle cx="410" cy="300" r="258" fill="none" stroke="#A8BFBD" stroke-width="2"/>
+  <g fill="none" stroke="#405C58" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Karton -->
+    <path d="M300 300 L340 262 H530 L490 300 Z" fill="#FBFAF6"/>
+    <path d="M490 300 L530 262 V412 L490 450 Z" fill="#D3DFDD"/>
+    <rect x="300" y="300" width="190" height="150" fill="#F6F5EF"/>
+    <path d="M400 300 L440 262" stroke-width="10" stroke="#D3DFDD"/>
+    <path d="M395 300 L435 262 M405 300 L445 262" stroke-width="1.5"/>
+    <rect x="388" y="300" width="24" height="42" fill="#D3DFDD"/>
+    <rect x="320" y="378" width="76" height="50" rx="3" stroke-width="1.5" opacity=".75"/>
+    <path d="M332 394 H384 M332 410 H370" stroke-width="1.5" opacity=".7"/>
+    <!-- Vorratsglas -->
+    <rect x="222" y="306" width="88" height="30" rx="6" fill="#D3DFDD"/>
+    <rect x="210" y="332" width="112" height="140" rx="24" fill="#FFFFFF"/>
+    <g stroke-width="2">
+      <circle cx="240" cy="440" r="11" fill="#F6F5EF"/><circle cx="266" cy="446" r="11" fill="#D3DFDD"/><circle cx="292" cy="440" r="11" fill="#F6F5EF"/>
+      <circle cx="252" cy="418" r="11" fill="#D3DFDD"/><circle cx="279" cy="420" r="11" fill="#F6F5EF"/>
+      <circle cx="264" cy="396" r="11" fill="#F6F5EF"/>
+    </g>
+    <!-- Süßwarenbeutel -->
+    <path d="M522 336 L532 324 L542 336 L552 324 L562 336 L572 324 L582 336 L592 324 L602 336 L612 324 L622 336 L630 472 L512 472 Z" fill="#FBFAF6"/>
+    <path d="M520 352 H624" stroke-width="1.5" opacity=".6"/>
+    <circle cx="571" cy="412" r="32" fill="#D3DFDD"/>
+    <circle cx="562" cy="406" r="6" stroke-width="2"/><circle cx="580" cy="420" r="6" stroke-width="2"/>
+    <!-- Bonbon -->
+    <path d="M412 482 L392 470 L394 496 Z" fill="#F6F5EF"/>
+    <path d="M468 482 L488 470 L486 496 Z" fill="#F6F5EF"/>
+    <ellipse cx="440" cy="483" rx="28" ry="19" fill="#FFFFFF"/>
+    <path d="M428 474 C436 482 444 486 454 488" stroke-width="1.5" opacity=".6"/>
+    <circle cx="192" cy="168" r="38" fill="#F6F5EF"/>
+    <circle cx="192" cy="168" r="18" stroke-width="2.5"/>
+    <circle cx="186" cy="162" r="2.5" fill="#405C58" stroke="none"/><circle cx="198" cy="166" r="2.5" fill="#405C58" stroke="none"/><circle cx="190" cy="176" r="2.5" fill="#405C58" stroke="none"/>
+  </g>
+</svg>
