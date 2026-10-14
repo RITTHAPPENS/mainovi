@@ -16,19 +16,19 @@ colors:
   error: "#9B2C1F"
 typography:
   display:
-    fontFamily: "Bodoni Moda, Didot, Bodoni 72, Georgia, serif"
+    fontFamily: "Montserrat, Segoe UI, system-ui, sans-serif"
     fontSize: "clamp(2.3rem, 3.7vw, 3.5rem)"
     fontWeight: 600
     lineHeight: 1.08
     letterSpacing: "-0.01em"
   headline:
-    fontFamily: "Bodoni Moda, Didot, Bodoni 72, Georgia, serif"
+    fontFamily: "Montserrat, Segoe UI, system-ui, sans-serif"
     fontSize: "clamp(2rem, 3.6vw, 3.4rem)"
     fontWeight: 600
     lineHeight: 1.08
     letterSpacing: "-0.01em"
   title:
-    fontFamily: "Bodoni Moda, Didot, Bodoni 72, Georgia, serif"
+    fontFamily: "Montserrat, Segoe UI, system-ui, sans-serif"
     fontSize: "clamp(1.35rem, 1.8vw, 1.65rem)"
     fontWeight: 600
     lineHeight: 1.2
@@ -91,7 +91,7 @@ components:
 
 ## Overview
 
-Ein Horizont, kein Katalog. MAINOVI tritt als ruhiger, präziser Exportpartner auf: großformatige Fotografie aus Hafen, Lager und Laderampe, Porcelain als Grund, Granite als Fläche, die ganze Bereiche besetzt. Die Marke spricht in einer hochkontrastigen Didone (CI: Serena Bold, im Web Bodoni Moda), alles Arbeitende in Montserrat. Feine 1px-Linien gliedern, Outline-Icons im Kreis zitieren die Ikonografie der Brand Guidelines.
+Ein Horizont, kein Katalog. MAINOVI tritt als ruhiger, präziser Exportpartner auf: großformatige Fotografie aus Hafen, Lager und Laderampe, Porcelain als Grund, Granite als Fläche, die ganze Bereiche besetzt. Headlines und Fließtext in Montserrat (Kundenwunsch, wie auf dem Briefpapier); die Didone lebt nur noch im Logo. Feine 1px-Linien gliedern, Outline-Icons im Kreis zitieren die Ikonografie der Brand Guidelines.
 
 Quelle der Farben und Schriften: MAINOVI Brand Guidelines (Granite, Porcelain, Muted Teal, Black; Serena Bold + Montserrat; Bodoni Moda als freigegebener Ersatz).
 
@@ -112,14 +112,14 @@ Porcelain ist der Grund der Seite, Porcelain-Shade die ruhige Zweitfläche (Anfr
 
 ## Typography
 
-Display, Headline und Title in Bodoni Moda 600 mit -0.01em Laufweite und ausbalancierten Umbrüchen; Hero-Headline maximal zwei Zeilen. Fließtext Montserrat 400, Zeilenhöhe 1.7, Lead-Texte in Ink-Soft auf max. 46ch. Labels und Buttons Montserrat 600.
+Display, Headline und Title in Montserrat 600 mit -0.02em Laufweite und ausbalancierten Umbrüchen; Hero-Headline maximal zwei Zeilen. Fließtext Montserrat 400, Zeilenhöhe 1.7, Lead-Texte in Ink-Soft auf max. 46ch. Labels und Buttons Montserrat 600.
 
 ### Hierarchy
 display (Hero) > headline (Sektionen) > title (Sortiment, Schritte) > lead > body > label.
 
 ### Named Rules
 - **Keine Kicker:** Über Headlines steht kein Label. Die Headline trägt sich selbst.
-- **Serifen nur für die Marke:** Die Didone ist für Headlines und Markennamen reserviert, nie für Formulare oder Fließtext.
+- **Eine Schrift:** Montserrat überall; Hierarchie über Größe und Gewicht, die Didone nur im Logo.
 
 ## Layout
 

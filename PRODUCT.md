@@ -32,13 +32,15 @@ Global Care Supply: Verbindung von Herstellern, Lieferanten und Abnehmern über 
 
 ## Capabilities and Constraints
 
-- Schwerpunkt: Großhandel mit Drogerie- und Kosmetikartikeln sowie Medizinprodukten. Weitere FMCG-Artikel (z. B. Lebensmittel, Süßwaren) kommen als neues Geschäftsfeld hinzu.
-- Produktkategorien: Drogerieartikel; Kosmetik & Hautpflege; Medizinprodukte; Weitere FMCG-Artikel. Formular zusätzlich: Mehrere Kategorien / allgemeine Anfrage.
+- Schwerpunkt: Großhandel mit Drogerie- und Kosmetikartikeln sowie Medizinprodukten. Lebensmittel & Süßwaren sind fester Bestandteil des Sortiments (nicht als "neues Geschäftsfeld" bezeichnen).
+- Produktkategorien: Drogerieartikel; Kosmetik & Hautpflege; Medizinprodukte; Lebensmittel & Süßwaren. Formular zusätzlich: Mehrere Kategorien / allgemeine Anfrage.
 - Zielgruppe: deutsche und internationale Geschäftskunden. Angebot ausschließlich für gewerbliche Kunden. Keine einzelnen Länder als feste Liefermärkte nennen; Anfragen werden individuell nach Zielland und Produkt geprüft.
 - Bestellablauf: Kunde fragt Marken, Artikel, Mengen und Zielland an; Mainovi prüft Verfügbarkeit und Preise, erstellt individuelles Angebot; nach Auftragsbestätigung Bereitstellung zur Abholung bzw. zum vereinbarten Versand.
 - Lieferbedingungen: grundsätzlich EXW ab Lager Eschau, Abweichungen individuell; auf Wunsch Unterstützung bei Transport und Zollabwicklung.
 - Stärken: breites Lieferantennetzwerk, langjährige Erfahrung in Großhandel und Kommissionierung, Mischaufträge; bei Medizinprodukten Charge und MHD dokumentiert.
-- KEINE Hersteller- oder Markenlogos auf der Website (Abmahnrisiko). Textliche Markenliste ggf. später.
+- KEINE Hersteller- oder Markenlogos auf der Website (Abmahnrisiko). Marken und Hersteller als Text sind gewünscht (Auffindbarkeit über Google und KI-Suche); Liste liefert der Kunde.
+- Schrift im Web: Montserrat für Headlines und Fließtext (Kundenwunsch, wie Briefpapier).
+- Langfristig eigene Produktfotos (Kunde organisiert Fotografen); bis dahin Linienillustrationen.
 - Mengen: ab einer Palette bis zu kompletten LKW- und Containerladungen. NICHT mehr: "Lieferung in 48 Stunden", "versandkostenfrei".
 - Kontakt: Mainovi GmbH, Elsavastr. 22, 63863 Eschau, Germany; info@mainovi.com (auch Formular-Empfänger); Tel. +49 9374 979 99 22; Mobil/WhatsApp +49 151 22 30 48 63 (öffentlich). Kein Fax.
 - Handelsregister HRB 18600, Amtsgericht Aschaffenburg, Geschäftsführer Peter Raile, USt-ID DE464351568.

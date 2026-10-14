@@ -52,7 +52,7 @@
   --line-granite: rgba(246, 245, 239, 0.22);
   --error: #9b2c1f;
 
-  --font-display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --font-display: "Montserrat", "Segoe UI", system-ui, sans-serif;
   --font-body: "Montserrat", "Segoe UI", system-ui, sans-serif;
 
   --wrap: 1320px;
@@ -129,15 +129,14 @@ a { color: inherit; text-underline-offset: 0.22em; text-decoration-thickness: 1p
 h1, h2, h3 {
   font-family: var(--font-display);
   font-weight: 600;
-  letter-spacing: -0.01em;
-  line-height: 1.08;
+  letter-spacing: -0.02em;
+  line-height: 1.14;
   margin: 0;
   text-wrap: balance;
-  font-variation-settings: "opsz" 48;
 }
-h1 { font-size: clamp(2.3rem, 3.7vw, 3.5rem); }
-h2 { font-size: clamp(2rem, 3.6vw, 3.4rem); }
-h3 { font-size: clamp(1.35rem, 1.8vw, 1.65rem); line-height: 1.2; }
+h1 { font-size: clamp(2.05rem, 3.3vw, 3.1rem); }
+h2 { font-size: clamp(1.75rem, 2.9vw, 2.7rem); }
+h3 { font-size: clamp(1.2rem, 1.5vw, 1.4rem); line-height: 1.25; }
 p { margin: 0; text-wrap: pretty; }
 .lead { font-size: clamp(1.05rem, 1.2vw, 1.15rem); line-height: 1.65; color: var(--ink-soft); max-width: 46ch; }
 
@@ -278,7 +277,7 @@ p { margin: 0; text-wrap: pretty; }
 .range-icon svg { width: 24px; height: 24px; }
 .range-text { display: grid; gap: 6px; }
 .range-name {
-  font-family: var(--font-display); font-weight: 600; font-size: clamp(1.35rem, 1.8vw, 1.65rem); line-height: 1.2;
+  font-family: var(--font-display); font-weight: 600; font-size: clamp(1.15rem, 1.4vw, 1.3rem); line-height: 1.3; letter-spacing: -0.01em;
   color: var(--ink);
   transition: color 200ms ease, transform 250ms var(--ease-out);
 }
@@ -327,6 +326,24 @@ p { margin: 0; text-wrap: pretty; }
 .placeholder strong { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; }
 .placeholder span { font-size: 0.875rem; color: var(--ink-soft); }
 
+/* Marken als Text */
+.brands { padding-bottom: var(--section); }
+.brands-head { display: grid; gap: 16px; max-width: 720px; margin-bottom: 40px; }
+.brands-head h2 { color: var(--granite-ink); }
+.brands-grid {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px;
+  border-top: 1px solid var(--line); padding-top: 28px;
+}
+.brands-grid h3 { font-size: 1rem; color: var(--granite); margin-bottom: 14px; }
+.brand-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.brand-list li {
+  font-size: 0.875rem; padding: 6px 12px; border-radius: var(--radius-pill);
+  background: var(--porcelain-shade); color: var(--ink);
+}
+.brand-list .todo-pill { background: var(--teal-soft); color: var(--granite-ink); font-style: italic; }
+@media (max-width: 900px) { .brands-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .brands-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
+
 /* Mengen */
 .volume {
   background: var(--granite);
@@ -363,7 +380,7 @@ p { margin: 0; text-wrap: pretty; }
 }
 .step-icon svg { width: 22px; height: 22px; }
 .steps strong {
-  font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; line-height: 1.2; color: var(--porcelain);
+  font-family: var(--font-display); font-weight: 600; font-size: 1.125rem; line-height: 1.3; color: var(--porcelain);
 }
 .steps span { font-size: 0.875rem; color: var(--on-granite-soft); line-height: 1.55; }
 
@@ -406,7 +423,7 @@ p { margin: 0; text-wrap: pretty; }
   font-size: 0.875rem; line-height: 1.55; color: var(--ink-soft);
 }
 .process li b {
-  font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; line-height: 1.2; color: var(--granite-ink);
+  font-family: var(--font-display); font-weight: 600; font-size: 1.0625rem; line-height: 1.3; color: var(--granite-ink);
 }
 .process li b::before {
   content: counter(step) "  ";
@@ -597,10 +614,11 @@ p { margin: 0; text-wrap: pretty; }
   .header-cta { width: 100%; min-height: 50px; }
   .brand-logo { height: 38px; }
 
-  .hero { align-items: flex-end; }
+  .hero { display: block; min-height: 0; background: var(--porcelain); }
+  .hero-media { position: relative; inset: auto; z-index: auto; aspect-ratio: 4 / 3; overflow: hidden; }
+  .hero-media img { object-position: 60% 50%; }
   .hero-inner { padding-inline: 0; padding-bottom: 0; }
-  .hero-panel { max-width: none; }
-  .hero-media img { object-position: 55% 40%; }
+  .hero-panel { max-width: none; padding: 28px var(--gutter) 40px; }
 
   .range-body { grid-template-columns: minmax(0, 1fr); }
   .range-stage { display: none; }
@@ -619,7 +637,6 @@ p { margin: 0; text-wrap: pretty; }
 .range-thumb img { width: 100%; height: 100%; object-fit: cover; }
 
 @media (max-width: 600px) {
-  .hero { min-height: max(600px, calc(100svh - var(--header-h))); }
   .hero-actions .btn { flex: 1 1 100%; }
   .range-trigger { grid-template-columns: 44px minmax(0, 1fr); gap: 16px; padding: 22px 0; }
   .range-icon { width: 44px; height: 44px; }
