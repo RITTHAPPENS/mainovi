@@ -154,6 +154,12 @@
       if (e.target.type === 'checkbox' || e.target.tagName === 'SELECT') check(e.target);
     });
 
+    /* Vorauswahl der Kategorie, wenn von der Produktseite verlinkt (?kategorie=…) */
+    var katMap = { drogerie: 'Drogerieartikel', kosmetik: 'Kosmetik & Hautpflege', medizin: 'Medizinprodukte', lebensmittel: 'Lebensmittel & Süßwaren' };
+    var katKey = new URLSearchParams(location.search).get('kategorie');
+    var katSel = form.querySelector('select[name="kategorie"]');
+    if (katKey && katMap[katKey] && katSel) katSel.value = katMap[katKey];
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var fields = form.querySelectorAll('[required]');
