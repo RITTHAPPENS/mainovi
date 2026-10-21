@@ -44,7 +44,6 @@ Global Care Supply: Verbindung von Herstellern, Lieferanten und Abnehmern über 
 - Mengen: ab einer Palette bis zu kompletten LKW- und Containerladungen. NICHT mehr: "Lieferung in 48 Stunden", "versandkostenfrei".
 - Kontakt: Mainovi GmbH, Elsavastr. 22, 63863 Eschau, Germany; info@mainovi.com (auch Formular-Empfänger); Tel. +49 9374 979 99 22; Mobil/WhatsApp +49 151 22 30 48 63 (öffentlich). Kein Fax.
 - Handelsregister HRB 18600, Amtsgericht Aschaffenburg, Geschäftsführer Peter Raile, USt-ID DE464351568.
-- Offen: Bestätigung, ob die VHV-Berufshaftpflicht auf die Mainovi GmbH läuft.
 
 ## Brand Commitments
 
