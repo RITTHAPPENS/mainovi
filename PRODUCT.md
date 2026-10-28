@@ -38,9 +38,9 @@ Global Care Supply: Verbindung von Herstellern, Lieferanten und Abnehmern über 
 - Bestellablauf: Kunde fragt Marken, Artikel, Mengen und Zielland an; Mainovi prüft Verfügbarkeit und Preise, erstellt individuelles Angebot; nach Auftragsbestätigung Bereitstellung zur Abholung bzw. zum vereinbarten Versand.
 - Lieferbedingungen: grundsätzlich EXW ab Lager Eschau, Abweichungen individuell; auf Wunsch Unterstützung bei Transport und Zollabwicklung.
 - Stärken: breites Lieferantennetzwerk, langjährige Erfahrung in Großhandel und Kommissionierung, Mischaufträge; bei Medizinprodukten Charge und MHD dokumentiert.
-- KEINE Hersteller- oder Markenlogos auf der Website (Abmahnrisiko). Marken und Hersteller als Text sind gewünscht (Auffindbarkeit über Google und KI-Suche); Liste liefert der Kunde.
+- KEINE Hersteller- oder Markenlogos als Gestaltungselement (Abmahnrisiko). Marken und Hersteller als Text (Auffindbarkeit über Google und KI-Suche); Markenliste vom Kunden geliefert (28.10.2026, ca. 470 Marken in 4 Kategorien). Eigene Produktfotos des Kunden (echte Ware auf Palette) sind freigegeben.
 - Schrift im Web: Montserrat für Headlines und Fließtext (Kundenwunsch, wie Briefpapier).
-- Langfristig eigene Produktfotos (Kunde organisiert Fotografen); bis dahin Linienillustrationen.
+- Eigene Fotos vom Kunden (Okt 2026): vier Produkt-Flatlays auf Palette (je Kategorie) und zwei Lageraufnahmen aus Eschau. Flatlays werden eng zugeschnitten (wenig Fliesenboden sichtbar).
 - Mengen: ab einer Palette bis zu kompletten LKW- und Containerladungen. NICHT mehr: "Lieferung in 48 Stunden", "versandkostenfrei".
 - Kontakt: Mainovi GmbH, Elsavastr. 22, 63863 Eschau, Germany; info@mainovi.com (auch Formular-Empfänger); Tel. +49 9374 979 99 22; Mobil/WhatsApp +49 151 22 30 48 63 (öffentlich). Kein Fax.
 - Handelsregister HRB 18600, Amtsgericht Aschaffenburg, Geschäftsführer Peter Raile, USt-ID DE464351568.

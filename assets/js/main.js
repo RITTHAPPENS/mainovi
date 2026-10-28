@@ -178,4 +178,21 @@
       }, 700);
     });
   }
+
+  /* Markenlisten: alles steht im HTML, optisch eingeklappt bis zum Klick */
+  document.querySelectorAll('[data-collapsible]').forEach(function (list) {
+    var btn = document.querySelector('[aria-controls="' + list.id + '"]');
+    if (!btn) return;
+    var label = btn.textContent;
+    list.classList.add('is-collapsed');
+    if (list.scrollHeight <= list.clientHeight + 4) { list.classList.remove('is-collapsed'); return; }
+    btn.hidden = false;
+    btn.setAttribute('aria-expanded', 'false');
+    btn.addEventListener('click', function () {
+      var open = list.classList.toggle('is-collapsed') === false;
+      btn.setAttribute('aria-expanded', String(open));
+      btn.textContent = open ? 'Weniger anzeigen' : label;
+      if (!open) list.closest('.cat-brands').scrollIntoView({ block: 'nearest' });
+    });
+  });
 })();
