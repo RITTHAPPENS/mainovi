@@ -719,8 +719,8 @@ p { margin: 0; text-wrap: pretty; }
   scroll-margin-top: var(--header-h);
 }
 .cat:last-child { border-bottom: 0; padding-bottom: 0; }
-.cat-photo { margin: 0; aspect-ratio: 2.6 / 1; overflow: hidden; background: var(--porcelain-shade); }
-.cat-photo img { width: 100%; height: 100%; object-fit: cover; }
+.cat-photo { margin: 0; }
+.cat-photo img { width: 100%; height: auto; display: block; }
 .cat-body {
   display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: clamp(32px, 6vw, 104px); align-items: start;
@@ -809,7 +809,6 @@ p { margin: 0; text-wrap: pretty; }
   .page-hero-media { position: relative; inset: auto; z-index: auto; aspect-ratio: 4 / 3; overflow: hidden; }
   .page-hero-panel { max-width: none; padding: 28px var(--gutter) 40px; }
   .cat-body { grid-template-columns: minmax(0, 1fr); gap: 28px; }
-  .cat-photo { aspect-ratio: 2 / 1; }
   .next-grid { grid-template-columns: minmax(0, 1fr); row-gap: 28px; }
   .next-grid h2 { grid-row: auto; }
 }
@@ -822,3 +821,10 @@ p { margin: 0; text-wrap: pretty; }
 @media (hover: hover) and (pointer: fine) {
   .cat-nav a:hover { background: var(--granite); border-color: var(--granite); color: var(--porcelain); }
 }
+
+/* Produkt-Sets vom Kunden (freigestellt, eigene Flächen im Bild): Bühne folgt dem Bildformat */
+.range-stage { aspect-ratio: 2000 / 950; background: transparent; }
+.range-stage img { object-fit: contain; }
+.range-thumb { aspect-ratio: 2000 / 950; background: transparent; }
+.range-thumb img { object-fit: contain; }
+.export-media img { object-position: 62% 50%; }
