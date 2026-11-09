@@ -110,7 +110,17 @@
   /* Anfrageformular: Prüfung im Browser, Versand folgt in WordPress */
   var form = document.getElementById('anfrage-form');
   if (form) {
-    var messages = {
+    var EN = document.documentElement.lang === 'en';
+    var messages = EN ? {
+      unternehmen: 'Please enter your company name.',
+      vorname: 'Please enter your first name.',
+      nachname: 'Please enter your last name.',
+      email: 'Please enter a valid email address, e.g. name@company.com.',
+      land: 'Please enter your country.',
+      kategorie: 'Please select a product category.',
+      nachricht: 'Please briefly tell us which items and quantities you are interested in.',
+      datenschutz: 'Please accept the privacy policy so that we can process your enquiry.'
+    } : {
       unternehmen: 'Bitte geben Sie Ihr Unternehmen an.',
       vorname: 'Bitte geben Sie Ihren Vornamen an.',
       nachname: 'Bitte geben Sie Ihren Nachnamen an.',
@@ -138,7 +148,7 @@
       if (wrap) wrap.classList.toggle('has-error', !ok);
       field.setAttribute('aria-invalid', String(!ok));
       var err = errorEl(field);
-      if (err) err.textContent = ok ? '' : (messages[field.name] || 'Bitte prüfen Sie dieses Feld.');
+      if (err) err.textContent = ok ? '' : (messages[field.name] || (EN ? 'Please check this field.' : 'Bitte prüfen Sie dieses Feld.'));
       return ok;
     }
 
@@ -155,8 +165,11 @@
     });
 
     /* Vorauswahl der Kategorie, wenn von der Produktseite verlinkt (?kategorie=…) */
-    var katMap = { drogerie: 'Drogerieartikel', kosmetik: 'Kosmetik & Hautpflege', medizin: 'Medizinprodukte', lebensmittel: 'Lebensmittel & Süßwaren' };
-    var katKey = new URLSearchParams(location.search).get('kategorie');
+    var katMap = EN
+      ? { drogerie: 'Drugstore products', kosmetik: 'Cosmetics & skin care', medizin: 'Medical products', lebensmittel: 'Food & confectionery' }
+      : { drogerie: 'Drogerieartikel', kosmetik: 'Kosmetik & Hautpflege', medizin: 'Medizinprodukte', lebensmittel: 'Lebensmittel & Süßwaren' };
+    var params = new URLSearchParams(location.search);
+    var katKey = params.get('kategorie') || params.get('category');
     var katSel = form.querySelector('select[name="kategorie"]');
     if (katKey && katMap[katKey] && katSel) katSel.value = katMap[katKey];
 
@@ -169,7 +182,7 @@
 
       var btn = form.querySelector('button[type="submit"]');
       btn.disabled = true;
-      btn.firstChild.textContent = 'Wird gesendet ';
+      btn.firstChild.textContent = EN ? 'Sending ' : 'Wird gesendet ';
       /* Prototyp: kein Versand. In WordPress übernimmt das Formular-Plugin. */
       setTimeout(function () {
         form.classList.add('is-sent');
@@ -191,7 +204,7 @@
     btn.addEventListener('click', function () {
       var open = list.classList.toggle('is-collapsed') === false;
       btn.setAttribute('aria-expanded', String(open));
-      btn.textContent = open ? 'Weniger anzeigen' : label;
+      btn.textContent = open ? (document.documentElement.lang === 'en' ? 'Show less' : 'Weniger anzeigen') : label;
       if (!open) list.closest('.cat-brands').scrollIntoView({ block: 'nearest' });
     });
   });

@@ -828,3 +828,6 @@ p { margin: 0; text-wrap: pretty; }
 .range-thumb { aspect-ratio: 2000 / 950; background: transparent; }
 .range-thumb img { object-fit: contain; }
 .export-media img { object-position: 62% 50%; }
+
+/* Lange Komposita (z. B. „Datenschutzerklärung“) auf schmalen Screens umbrechen */
+h1, h2 { hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word; }
